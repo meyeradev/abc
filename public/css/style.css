@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+a, p, span,  figcaption {
+    font-family: sans-serif;
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+}
+h3, h3 a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: rgb(124, 124, 124);
+}
+section#pres h2 a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #E77927
+}
+p {
+    line-height: 19px;
+}
+body > *:nth-child(odd) {
+    background-image: url("/img/grille.png");
+}
+body > *:nth-child(even) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.hr {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    position: relative;
+    right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.date em {
+    font-size: 10px;
+    color: #b6b6b6;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Header */
+header {
+/*    height: 160px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+h1 {
+    display: inline-block;
+}
+nav {
+    display: inline-block;
+    float: right;
+}
+.first-list > li {
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 20px;
+}
+.first-list li:nth-child(1) .hr {
+    background-color: #F76900;
+}
+.first-list li:nth-child(2) .hr {
+    background-color: #FCD04A;
+}
+.first-list li:nth-child(3) .hr {
+    background-color: #B9D482;
+}
+.first-list li:nth-child(4) .hr {
+    background-color: #3D92C2;
+}
+.first-list li:nth-child(5) .hr {
+    background-color: #C078D0;
+}
+.first-list ul li {
+    display: block;
+}
+.first-list ul a {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+.first-list ul li {
+    margin-bottom: 5px;
+}
+/* Header */
+
+
+section#video {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+iframe {
+    display: block;
+    margin: auto;
+}
+
+
+section#desc {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+section#desc h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #746f6f;
+}
+
+/* Pres */
+section#pres {
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section#pres > article, section#pres > div:nth-child(2)  {
+    display: inline-block;
+    width: 18%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+section#pres > div:nth-child(2) article {
+    width: 100%;
+}
+section#pres .fastfood {
+    margin-top: 40px;
+}
+section#pres > div:nth-child(3) {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+section#pres .comment {
+    display: inline-block;
+    width: 100%;
+}
+section#pres .pics {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+section#pres .pics img {
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 27%;
+}
+section#pres > article {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+section#pres article > a:last-child {
+    display: block;
+    margin-top: 10px;
+    color: #b6b6b6;
+    font-style: italic;
+}
+/* Pres */
+
+
+/* Info */
+section#info {
+    padding-left: 17%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section#info .contact, section#info .ticket, section#info div.comment, section#info .lorem {
+    display: inline-block;
+    width: 17%;
+    margin-right: 40px;
+    vertical-align: top;
+}
+section#info h3 {
+    margin-bottom: 16px;
+}
+section#info .contact {
+    width: 16%;
+}
+section#info .contact figure:nth-child(2) {
+    margin-bottom: 13px;
+}
+section#info figure {
+    margin-bottom: 2px;
+}
+section#info figure * {
+    display: inline-block;
+}
+section#info figure img {
+    position: relative;
+    bottom: 2px;
+}
+section#info figcaption {
+    width: 75%;
+    vertical-align: top;
+    line-height: 14px;
+}
+section#info figcaption a[target="_top"] {
+    text-decoration: underline;
+}
+section#info strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+section#info a.comment {
+    color: #b6b6b6;
+    text-decoration: underline;
+    font-style: italic;
+}
+/* Info */
+
+
+/* Footer */
+footer {
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 17%;
+    position: relative;
+}
+footer .links a {
+    font-size: 11px;
+    color: #b6b6b6;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+footer .links a:nth-child(-n+3) {
+    border-right: 1px solid #b6b6b6;
+}
+footer #copyright {
+    font-size: 11px;
+    color: #b6b6b6;
+    display: block;
+    margin-top: 10px;
+}
+footer .pics {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* Footer */
