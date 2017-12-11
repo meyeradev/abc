@@ -2,15 +2,16 @@
 var express = require('express'),
     app = express(),
     path = require('path'),
-    port = 1318;
+    port = 1318,
+    appDir = path.dirname(require.main.filename);
 
 // Middleware
-app.use('/', express.static(path.resolve('public/')));
+app.use('/', express.static(appDir+'/public/'));
 
 // Routes
 app
 .get('/', function(req, res) {
-    res.sendFile(path.resolve('public/index.html'));
+    res.sendFile(appDir+'/public/index.html');
 })
 .use(function(req, res) {
     res.redirect('/');
